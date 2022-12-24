@@ -20,6 +20,8 @@ const mb = menubar({
     icon: path.resolve(__dirname, "icons/TodoMenubarIconTemplate.png"), // tray icon
     width: 270,
     height: 225,
+    minWidth: 270,
+    minHeight: 225,
     maxWidth: 320,
     maxHeight: 470,
     useContentSize: true,
