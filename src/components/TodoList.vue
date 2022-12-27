@@ -24,6 +24,17 @@
 import { Todo } from "./models";
 import TodoItem from "./TodoItem.vue";
 
+// onMounted(() => {
+  // divHeight.value = document.querySelector(".scroll-div")?.clientHeight;
+  // console.log("divHeight: ", divHeight.value);
+  // window.addEventListener("resize", () => {
+  //   let divHeight = document.querySelector(".scroll-div")?.clientHeight;
+  //   document
+  //     .querySelector(".scroll-area-class")
+  //     ?.setAttribute("style", "height: " + divHeight + "px");
+  // });
+// });
+
 defineProps<{
   todos: Todo[];
   tab: string;

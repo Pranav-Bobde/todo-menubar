@@ -16,8 +16,8 @@ try {
 
 const mb = menubar({
   index: process.env.APP_URL,
+  icon: path.resolve(__dirname, "icons/TodoMenubarIconTemplate.png"),
   browserWindow: {
-    icon: path.resolve(__dirname, "icons/TodoMenubarIconTemplate.png"), // tray icon
     width: 270,
     height: 225,
     minWidth: 270,
@@ -35,7 +35,6 @@ const mb = menubar({
 
 mb.on("ready", () => {
   console.log("app is ready");
-  // your app code here
 });
 
 ipcMain.handle("quit-app", () => {
